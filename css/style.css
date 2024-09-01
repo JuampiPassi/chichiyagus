@@ -248,7 +248,7 @@ span#error-form {
 /* Portada */
 section.portada {
   width: 100%;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
   background-size: cover;
   color: var(--color-5);
   position: relative;
@@ -301,7 +301,8 @@ section.portada .adorno.adorno-3 {
 }
 
 section.portada .container .row:first-child {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 61vh;
   max-height: 700px;
 }
 

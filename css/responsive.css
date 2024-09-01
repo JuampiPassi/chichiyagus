@@ -85,7 +85,9 @@
   }
 
   section.portada {
-    padding-bottom: 60%;
+    /* padding-bottom: 60%; */
+    padding-bottom: 16%;
+    
   }
 
   section.portada .box-frase-portada p {
