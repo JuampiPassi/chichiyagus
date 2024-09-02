@@ -388,12 +388,14 @@ section.portada .box-frase-portada {
 
 section.portada .box-frase-portada p {
   color: var(--color-1);
-  font-family: var(--fuente-2);
+  font-family: "Josefin Sans", sans-serif;
   font-weight: var(--weight-font-regular);
   font-size: 28px;
   line-height: 35px;
   text-align: center;
   margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 section.portada .box-frase-portada p img {
