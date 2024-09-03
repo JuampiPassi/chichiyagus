@@ -254,7 +254,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-6 col-ceremonia text-center">
+        <div class="col-md-6 col-ceremonia text-center" style="max-width: 100%; flex: auto;">
 
           <div class="anim-anillos"></div>
 
@@ -266,37 +266,22 @@
           <div class="info-col">
 
             <div class="info-box">
-              <h6>Día</h6>
-              <p>Domingo 2 de Marzo - 17hs</p>
-              <a href="#" class="boton addeventatc">
+              <!-- <h6>Día</h6> -->
+              <p>Se llevará a cabo el 2 de Marzo, en la capilla Ntra. Sra. del Rosario, a las 18hs</p>
 
-                <span class="nameBtn">Agendar</span>
-
-                <span class="start">2024-10-10 17:20:54</span>
-                <span class="end">2024-10-10 17:20:54</span>
-                <span class="timezone">America/Argentina/Buenos_Aires</span>
-                <span class="title">Casamiento Agustín y Anahí (Ceremonia)</span>
-
-              </a>
-            </div>
-
-            <div class="info-box">
-              <h6>Lugar</h6>
-              <p>Parroquia Nuestra Señora de Lujan</p>
-              <a href="#" data-evento="Ceremonia" class="boton confirmar-asistencia">Confirmar asistencia</a>
-            </div>
-
-            <div class="info-box">
+              <h6>Fiesta</h6>
+              <p>Luego de la Misa, los invitamos a festejar nuestro SI annte Dios, en el salón de fiestas de la Capilla</p>
+              
               <h6>Dirección</h6>
-              <p>Av. Pergamino 203 - BsAs</p>
-              <a href="#" data-evento="Ceremonia" class="boton modal-como-llegar">¿Cómo llegar?</a>
+              <p>RN18 24 - Espinillo</p>
+              <a target="_blank" href="https://maps.app.goo.gl/wssYA6xrcbsL2yEW6" data-evento="Ceremonia" class="boton modal-como-llegar">¿Cómo llegar?</a>
             </div>
 
           </div>
 
         </div>
 
-        <div class=" col-md-6 col-fiesta text-center">
+        <!-- <div class=" col-md-6 col-fiesta text-center">
 
           <div class="anim-fiesta"></div>
 
@@ -334,7 +319,7 @@
 
           </div>
 
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -642,55 +627,6 @@
 
         </div>
 
-
-        <div class="col-md-6 col-acciones-footer d-flex justify-content-center align-items-center">
-
-          <ul>
-
-            <li>
-              <a href="#" data-evento="Ceremonia" class="confirmar-asistencia">Confirmar asistencia a ceremonia</a>
-            </li>
-
-            <li>
-              <a href="#" data-evento="Fiesta" class="confirmar-asistencia">Confirmar asistencia a fiesta</a>
-            </li>
-
-            <li>
-              <a href="#" class="sugerir-cancion">Sugerir canción</a>
-            </li>
-
-            <li>
-              <div title="" class="addeventatc">
-
-                <span class="nameBtn">Agendar Fiesta</span>
-
-                <span class="start">2024-10-10 17:20:54</span>
-                <span class="end">2024-10-10 17:20:54</span>
-                <span class="timezone">America/Argentina/Buenos_Aires</span>
-                <span class="title">Boda de Chichi y Agus (Fiesta)</span>
-
-              </div>
-            </li>
-
-            <li>
-              <div title="" class="addeventatc">
-
-                <span class="nameBtn">Agendar Ceremonia</span>
-
-                <span class="start">2024-10-10 17:20:54</span>
-                <span class="end">2024-10-10 17:20:54</span>
-                <span class="timezone">America/Argentina/Buenos_Aires</span>
-                <span class="title">Boda de Chichi y Agus (Ceremonia)</span>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-
       </div>
 
     </div>
@@ -714,20 +650,7 @@
   </footer>
 
 
-  <!-- Musica -->
 
-
-  <div id="controlador-musica">
-    <div id="play-pause-music" data-estado-music="pause" class="music-anim-icon"></div>
-  </div>
-
-  <div id="player-musica-fondo"></div>
-
-
-
-
-
-  <!-- Si esta en modo "Modelo" muestro el repdorductor de musica sin musica -->
   
   <!-- Modal vestuario-->
   <div id="modalVestuario" class="modal modal-card fade" tabindex="-1">
@@ -821,48 +744,7 @@
 
       </div>
     </div>
-  </div>
-  <!-- Modal mapa-->
-  <div id="modalMapa" class="modal modal-card  fade" tabindex="-1">
-    <div class="modal-dialog modal-md modal-dialog-centered">
-      <div class="modal-content">
-
-        <div class="img-top-modal d-flex justify-content-center align-items-start">
-
-          <!-- Adornos -->
-          <picture>
-            <source type="image/webp" srcset="img/Grupo04.webp">
-            <source type="image/png" srcset="img/Grupo04.png">
-            <img class="adorno adorno-1" src="img/Grupo04.png" alt=""
-              loading="">
-          </picture>
-
-
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-
-        </div>
-
-
-        <div class="modal-header">
-
-          <h5 class="modal-title"></h5>
-
-        </div>
-
-        <div class="modal-body">
-          <div id="googleMap"></div>
-        </div>
-
-        <div class="modal-footer">
-          <a class="boton ampliar-mapa" target="_blank" href="#">Ampliar mapa</a>
-        </div>
-
-
-      </div>
-    </div>
-  </div>
+  </div
 
   <!-- Muestro el banner si tiene parametro "banner" y si el modelo es visible en la web (para que tenga donde dirigir) -->
 
@@ -882,10 +764,8 @@
     var fechaCuentaRegresiva = "02/03/2025 00:00:00";
 
     // Mapas
-    var latitudFiesta = -34.6201481;
-    var longitudFiesta = -58.4046887;
-    var latitudCeremonia = -34.6201481;
-    var longitudCeremonia = -58.4046887;
+    var latitudCeremonia = -31.787110082877295;
+    var longitudCeremonia = -60.31040023797139;
 
 
   </script>
@@ -1003,23 +883,6 @@
       }, 100);
 
     });
-  </script>
-
-
-
-
-  <!-- Animacion flecha scroll -->
-  <script>
-    let svgContainerFlechaScroll = document.querySelector('.flecha-continuar');
-
-    let animFlechaScroll = bodymovin.loadAnimation({
-      wrapper: svgContainerFlechaScroll,
-      animType: 'svg',
-      loop: true,
-      path: "img/down-scroll.json"
-    });
-
-    animFlechaScroll.setSpeed(0.6);
   </script>
 
 
@@ -1243,47 +1106,6 @@
 
 
 
-  <!-- Modal Como Llegar -->
-  <script>
-    // Abrir modal
-    $('body').on('click', 'a.modal-como-llegar', function (e) {
-
-      e.preventDefault();
-
-      var evento = $(this).attr('data-evento');
-
-      if (evento == 'Fiesta') {
-        var titleModalMapa = lang_titleModalMapaFiesta;
-
-        var latitudMapa = latitudFiesta;
-        var longitudMapa = longitudFiesta;
-      }
-
-      if (evento == 'Ceremonia') {
-        var titleModalMapa = lang_titleModalMapaCeremonia;
-
-        var latitudMapa = latitudCeremonia;
-        var longitudMapa = longitudCeremonia;
-      }
-
-      // Cambio titulo
-      $('#modalMapa .modal-title').text(titleModalMapa);
-
-      // Genero el link para ampliar mapa
-      $('.ampliar-mapa').attr('href', 'https://www.google.com/maps/search/?api=1&query=' + latitudMapa + ',' + longitudMapa);
-
-      // Cambio mapa
-      initMap(latitudMapa, longitudMapa);
-
-      $('#modalMapa').modal({
-        backdrop: 'static'
-      })
-
-    });
-  </script>
-
-
-
   <!-- Instagram parallax -->
   <script>
     // Si el ancho es de Telefono
@@ -1293,7 +1115,7 @@
       if (support_format_webp()) {
         var imageInstagramParallax = 'img/fondo-mobile.webp';
       } else {
-        var imageInstagramParallax = 'https://www.fixdate.io/ar/modelo-invitacion/img/fondo-mobile.jpg';
+        var imageInstagramParallax = 'img/fondo-mobile.jpg';
       }
 
     } else {
@@ -1302,7 +1124,7 @@
       if (support_format_webp()) {
         var imageInstagramParallax = 'img/fondo.webp';
       } else {
-        var imageInstagramParallax = 'https://www.fixdate.io/ar/modelo-invitacion/img/fondo.jpg';
+        var imageInstagramParallax = 'img/fondo.jpg';
       }
 
     }
@@ -1311,173 +1133,6 @@
       imageSrc: imageInstagramParallax
     });
   </script>
-
-
-  <!-- Api Maps-->
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_3ZK1od6HtymslnbVFuzpUbMfrCRVqzM&amp;callback=initMap&amp;r=2082601341">
-    </script>
-
-  <!-- Config map -->
-  <script>
-    function initMap(latitud = 0, longitud = 0) {
-
-      var myLatLng = {
-        lat: latitud,
-        lng: longitud
-      };
-
-      var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 15,
-        scrollwheel: false,
-        disableDefaultUI: false,
-
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(latitud, longitud),
-
-        // How you would like to style the map.
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [{
-          "featureType": "administrative",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#6195a0"
-          }]
-        },
-        {
-          "featureType": "landscape",
-          "elementType": "all",
-          "stylers": [{
-            "color": "#f2f2f2"
-          }]
-        },
-        {
-          "featureType": "landscape",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#ffffff"
-          }]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        },
-        {
-          "featureType": "poi.park",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#e6f3d6"
-          },
-          {
-            "visibility": "on"
-          }
-          ]
-        },
-        {
-          "featureType": "road",
-          "elementType": "all",
-          "stylers": [{
-            "saturation": -100
-          },
-          {
-            "lightness": 45
-          },
-          {
-            "visibility": "simplified"
-          }
-          ]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "simplified"
-          }]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#f4d2c5"
-          },
-          {
-            "visibility": "simplified"
-          }
-          ]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "labels.text",
-          "stylers": [{
-            "color": "#4e4e4e"
-          }]
-        },
-        {
-          "featureType": "road.arterial",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#f4f4f4"
-          }]
-        },
-        {
-          "featureType": "road.arterial",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#787878"
-          }]
-        },
-        {
-          "featureType": "road.arterial",
-          "elementType": "labels.icon",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        },
-        {
-          "featureType": "transit",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        },
-        {
-          "featureType": "water",
-          "elementType": "all",
-          "stylers": [{
-            "color": "#eaf6f8"
-          },
-          {
-            "visibility": "on"
-          }
-          ]
-        },
-        {
-          "featureType": "water",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#eaf6f8"
-          }]
-        }
-        ]
-
-      };
-
-      var mapElement = document.getElementById('googleMap');
-
-      var map = new google.maps.Map(mapElement, mapOptions);
-
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-      });
-
-    }
-  </script>
-
 
 
 
@@ -1507,10 +1162,6 @@
       imageSrc: imageParallax
     });
   </script>
-
-
-
-
 
 
 
