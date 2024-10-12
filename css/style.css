@@ -1,4 +1,14 @@
-
+.parallax-window {
+  min-height: 500px;
+  width: 100%;
+  background: transparent;
+}
+@media(max-width:648px){
+  .parallax-window{
+    background-image: url("img/fondo-mobile.jpg") !important;
+    background-attachment: fixed !important;
+  }
+}
 .nos-casamos{
   color: #fcfcfc;
   font-family: "Josefin Sans", sans-serif;
