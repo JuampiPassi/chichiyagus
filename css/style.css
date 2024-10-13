@@ -1,8 +1,4 @@
-.parallax-window {
-  min-height: 500px;
-  width: 100%;
-  background: transparent;
-}
+
 @media(max-width:648px){
   .parallax-window{
     background-image: url("img/fondo-mobile.jpg") !important;
@@ -711,10 +707,12 @@ section.galeria {
   background-color: var(--color-5);
 }
 
+
 section.galeria .anim-galeria {
   width: 70px;
   margin: 0 auto;
 }
+
 
 
 section.galeria .content-fotos {
@@ -722,14 +720,17 @@ section.galeria .content-fotos {
   position: relative;
 }
 
+
 section.galeria .content-fotos img {
   width: 100%;
 }
 
 
+
 section.galeria .content-fotos .polaroid a {
   outline: none;
 }
+
 
 
 section.galeria .content-fotos .polaroid {
@@ -747,13 +748,18 @@ section.galeria .content-fotos .polaroid {
   transition: all 0.5s 0s ease;
 }
 
+
 section.galeria .slick-slide:focus {
   outline: none !important;
 }
 
+
+
 section.galeria .slick-center .polaroid {
   background-color: var(--color-6) !important;
 }
+
+
 
 .content-fotos .shadow-left {
   display: none;
@@ -774,9 +780,13 @@ section.galeria .slick-dots li button:before {
   opacity: 0.60;
 }
 
+
+
 section.galeria .slick-dots li.slick-active button:before {
   opacity: 1;
 }
+
+
 
 /* ---------- */
 
