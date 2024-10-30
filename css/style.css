@@ -1,3 +1,67 @@
+/* LISTA DE REGALOS */
+
+.lista-regalos {
+  width: 90%;
+  max-width: 800px;
+}
+
+.regalo {
+  display: flex;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.regalo:hover {
+  transform: scale(1.02);
+}
+
+.regalo img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.regalo-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.regalo-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.regalo-content p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .regalo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .regalo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .regalo-content {
+    padding: 20px;
+  }
+}
+/* -------------- */
 /* GRILLA DE IMAGENES DE REGALOS */
 .galleria-regalos {
   display: grid;

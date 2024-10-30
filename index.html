@@ -959,12 +959,12 @@
 
         <div class="modal-header">
 
-          <h5 class="modal-title">Regalos</h5>
+          <p>Compartimos con ustedes esta lista de elementos que necesitamos para nuestro hogar. Aunque tenemos algunas preferencias de colores y estilos, confiamos en su buen gusto. Cualquier regalo será bienvenido y apreciado.</p>
 
         </div>
 
         <div class="modal-body">
-          <div class="galleria-regalos">
+          <!-- <div class="galleria-regalos">
             <a href="https://www.mercadolibre.com.ar/lavarropas-automatico-codini-ecowash-6010-inverter-6kgs-color-gris/p/MLA34121480#polycard_client=search-nordic&wid=MLA1693835446&sid=search&searchVariation=MLA34121480&position=6&search_layout=stack&type=product&tracking_id=f5f3fbe3-612e-46f2-b6b5-1254161f8c60" target="_blank" class="galleria-regalos-item">
               <img src="https://http2.mlstatic.com/D_NQ_NP_823035-MLA74718993100_032024-O.webp" alt="Imagen 1">
             </a>
@@ -983,9 +983,9 @@
             <a href="https://www.mercadolibre.com.ar/cafetera-express-digital-atma-pro-ceat5403gp-15-l/p/MLA27953621#polycard_client=search-nordic&wid=MLA1395508941&sid=search&searchVariation=MLA27953621&position=4&search_layout=stack&type=product&tracking_id=d83cb876-7a67-4bdb-8dc6-badd70175bdd" target="_blank" class="galleria-regalos-item">
               <img src="https://http2.mlstatic.com/D_NQ_NP_806406-MLU72892501896_112023-O.webp" alt="Imagen 6">
             </a>
-            <!-- Agrega más elementos si es necesario -->
-          </div>
-          
+           
+          </div> -->
+          <div class="lista-regalos" id="lista-regalos"></div>
         </div>
 
         <div class="modal-footer">
@@ -996,7 +996,43 @@
       </div>
     </div>
   </div>
+  <!-- SCRIPTS LISTA DE REGALOS -->
+  <script>
+    // Función para cargar y mostrar los artículos desde el JSON
+    async function loadRegalos() {
+      try {
+        // Cargar el archivo JSON
+        const response = await fetch('regalos.json');
+        const regalos = await response.json();
 
+        // Seleccionar el contenedor donde se añadirán los artículos
+        const listaDeRegalos = document.getElementById('lista-regalos');
+
+        // Generar el HTML para cada artículo
+        regalos.forEach(item => {
+          const regaloElement = document.createElement('div');
+          regaloElement.classList.add('regalo');
+
+          regaloElement.innerHTML = `
+		  	<a href="${item.url}" target="_blank">
+            	<img src="${item.imagen}">
+			</a>
+            <div class="regalo-content">
+              <p>${item.descripcion}</p>
+            </div>
+          `;
+
+          // Añadir el artículo al contenedor
+          listaDeRegalos.appendChild(regaloElement);
+        });
+      } catch (error) {
+        console.error('Error al cargar los regalos:', error);
+      }
+    }
+
+	// Llamar a la función al cargar la página
+	document.addEventListener('DOMContentLoaded', loadRegalos);
+  </script>
 
   <!-- Scripts -->
   <!-- Varaibles para JS desde config -->
