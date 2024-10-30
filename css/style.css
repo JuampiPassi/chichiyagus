@@ -46,20 +46,20 @@
 }
 
 @media (max-width: 600px) {
-  .regalo {
+  /* .regalo {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
+  } */
 
-  .regalo img {
-    width: 100%;
+  /* .regalo img {
+    width: auto;
     height: auto;
-  }
+  } */
 
-  .regalo-content {
+  /* .regalo-content {
     padding: 20px;
-  }
+  } */
 }
 /* -------------- */
 /* GRILLA DE IMAGENES DE REGALOS */
